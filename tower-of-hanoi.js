@@ -55,9 +55,9 @@ function TOH(n, source, dest, temp) { // O(2^n)
   if (n === 0) { // 0(1)
     return; // 0(1)
   }
-  TOH(n - 1, source, temp, dest); // O(x)
+  TOH(n - 1, source, temp, dest); // O(x)     FIRST time linear
   print(source, dest); // 0(1)
-  TOH(n - 1, temp, dest, source); // O(x)
+  TOH(n - 1, temp, dest, source); // O(x)     Second time exponential, since its n * N = n^2. Everytime you call it, it would be multiple n^2 * n^2 = n^4 EXPONENTIAL
 }
 
 function print(a,b){
@@ -65,3 +65,5 @@ function print(a,b){
 }
 
 TOH(3, 'A', 'C', 'B'); // O(2^n)
+
+// Worse-case: Exponential time O(2^n)

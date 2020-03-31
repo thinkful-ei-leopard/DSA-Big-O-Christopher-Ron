@@ -14,3 +14,6 @@ Authors: Christopher and Ron
 9. random-element.js
 10. what-am-i.js
 11. tower-of-hanoi.js
+12. iterative-version.js
+13. recursive-big-o.js
+14. iterative-big-o.js
